@@ -5,22 +5,23 @@ const Navigation = () => {
   const menu = [
     {
       name: 'Sobre Mí',
-      url: '#'
+      url: '#sobre-mi'
     },
     {
       name: 'Skills',
-      url: '#'
+      url: '#skills'
     },
-    {
-      name: 'Hobbies',
-      url: '#'
-    },
+
     {
       name: 'Proyectos',
       url: '#'
     },
     {
       name: 'Formación',
+      url: '#'
+    },
+    {
+      name: 'Hobbies',
       url: '#'
     },
     {
@@ -33,7 +34,7 @@ const Navigation = () => {
     <Navbar
       fluid
       rounded
-      className='bg-black py-4 mx-auto max-w-screen-xl'>
+      className='bg-[#14071c] py-4 mx-auto max-w-screen-xl fixed top-0 left-0 right-0'>
       <Navbar.Brand>
         <img
           src={ProfilePic}

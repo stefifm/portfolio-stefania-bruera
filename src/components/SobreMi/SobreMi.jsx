@@ -1,7 +1,9 @@
 const SobreMi = () => {
   return (
-    <section className='text-white flex flex-col gap-4 py-33 mx-auto w-2/3 px-28 mt-20'>
-      <div className='bg-purple-100/10 rounded py-5 px-4 flex flex-col gap-5'>
+    <section
+      id='sobre-mi'
+      className='text-white flex flex-col gap-4 py-48 mx-auto w-2/3 px-28 mt-52'>
+      <div className='bg-purple-100/10 rounded-xl py-10 px-6 flex flex-col gap-5'>
         <h1 className='text-4xl font-bold'>Sobre Mí</h1>
         <article className='flex flex-col gap-1'>
           <p>

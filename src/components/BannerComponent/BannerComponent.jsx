@@ -33,7 +33,7 @@ const BannerComponent = () => {
   ]
 
   return (
-    <section className='mt-20'>
+    <section className='mt-56'>
       <div className='flex gap-4 py-33 justify-center items-center mx-auto w-2/3 px-28'>
         <div className='flex flex-col gap-3'>
           <h1 className='font-bold text-5xl py-4 from-purple-600 via-pink-600 to-blue-600 bg-gradient-to-r bg-clip-text text-transparent'>
