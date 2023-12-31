@@ -10,5 +10,6 @@
 
 body {
   font-family: 'Roboto', sans-serif;
-
+  background: rgb(20,7,28);
+  background: linear-gradient(180deg, #14071c 0%, #55087f 100%);
 }
