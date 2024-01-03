@@ -61,31 +61,31 @@ const Skills = () => {
   return (
     <section
       id='skills'
-      className='flex flex-col items-center gap-10 py-33 mx-auto w-2/3 px-28 mt-52 text-white'>
+      className='flex flex-col items-center gap-10 py-24 px-10 mx-auto lg:w-2/3 lg:px-28 mt-14 mb-44 text-white'>
       <h1 className='text-5xl font-bold'>Skills</h1>
-      <div className='flex justify-between gap-x-72 mx-auto'>
-        <div className='w-1/2 flex flex-col gap-4'>
-          <h2 className='text-3xl font-semibold'>Tecnologías</h2>
-          <ul className='flex flex-col gap-3'>
+      <div className='flex flex-col gap-y-10 lg:flex-row lg:justify-between lg:gap-x-72 mx-auto'>
+        <div className='lg:w-1/2 flex flex-col gap-4'>
+          <h2 className='text-3xl font-semibold text-center lg:text-left'>Tecnologías</h2>
+          <ul className='flex flex-wrap gap-2 lg:gap-6'>
             {tecnologias.map((tecno, index) => (
               <li
                 key={index}
-                className='flex items-center gap-4'>
-                <tecno.icon className='size-7' />
-                <p className='text-lg'>{tecno.name}</p>
+                className='flex items-center gap-2 rounded-md py-3 px-2 border border-white/10 bg-violet-700'>
+                <tecno.icon className='size-6' />
+                <p className='text-base'>{tecno.name}</p>
               </li>
             ))}
           </ul>
         </div>
-        <div className='w-1/2 flex flex-col gap-4'>
-          <h2 className='text-3xl font-semibold'>Soft Skills</h2>
-          <ul className='flex flex-col gap-3'>
+        <div className='lg:w-1/2 flex flex-col gap-4'>
+          <h2 className='text-3xl font-semibold text-center lg:text-left'>Soft Skills</h2>
+          <ul className='flex flex-wrap gap-2 lg:gap-6'>
             {softSkills.map((soft, index) => (
               <li
                 key={index}
-                className='flex items-center gap-4'>
-                <soft.icon className='size-7' />
-                <p className='text-lg'>{soft.name}</p>
+                className='flex items-center gap-2 rounded-md py-3 px-2 border border-white/10 bg-violet-700'>
+                <soft.icon className='size-6' />
+                <p className='text-base'>{soft.name}</p>
               </li>
             ))}
           </ul>

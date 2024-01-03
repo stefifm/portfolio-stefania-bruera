@@ -34,9 +34,9 @@ const BannerComponent = () => {
 
   return (
     <section className='mt-56'>
-      <div className='flex gap-4 py-33 justify-center items-center mx-auto w-2/3 px-28'>
+      <div className='flex flex-col-reverse lg:flex-row gap-4 lg:py-33 px-4 justify-center items-center mx-auto lg:w-2/3 lg:px-28'>
         <div className='flex flex-col gap-3'>
-          <h1 className='font-bold text-5xl py-4 from-purple-600 via-pink-600 to-blue-600 bg-gradient-to-r bg-clip-text text-transparent'>
+          <h1 className='font-bold text-4xl lg:text-5xl py-4 from-purple-600 via-pink-600 to-blue-600 bg-gradient-to-r bg-clip-text text-transparent'>
             Hola, mi nombre es Stefania Bruera!! Soy Programador Junior y Periodista Deportivo
           </h1>
           <p className='text-white text-xl'>
@@ -64,7 +64,7 @@ const BannerComponent = () => {
         <img
           src={ProfilePic}
           alt=''
-          className='w-80 h-80 '
+          className='size-72 lg:size-80'
         />
       </div>
     </section>
