@@ -83,7 +83,7 @@ const Skills = () => {
             {softSkills.map((soft, index) => (
               <li
                 key={index}
-                className='flex items-center justify-center gap-2 rounded-md p-2 text-balance border border-white/10 bg-violet-700 basis-1/3'>
+                className='flex items-center justify-center gap-2 rounded-md p-2 border border-white/10 bg-violet-700 basis-1/3'>
                 <soft.icon className='size-6' />
                 <p className='text-sm lg:text-base'>{soft.name}</p>
               </li>
