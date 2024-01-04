@@ -64,7 +64,7 @@ const Skills = () => {
       className='flex flex-col items-center gap-10 py-24 px-10 mx-auto lg:w-2/3 lg:px-22 mt-14 mb-44 text-white'>
       <h1 className='text-5xl font-bold'>Skills</h1>
       <div className='flex flex-col gap-y-10 xl:flex-row xl:justify-between lg:gap-x-72'>
-        <div className='lg:w-full flex flex-col gap-4'>
+        <div className=' flex flex-col gap-4'>
           <h2 className='text-3xl font-semibold text-center '>Tecnologías</h2>
           <ul className='flex flex-wrap gap-2 lg:gap-6 justify-center'>
             {tecnologias.map((tecno, index) => (
@@ -77,7 +77,7 @@ const Skills = () => {
             ))}
           </ul>
         </div>
-        <div className='lg:w-full flex flex-col gap-4'>
+        <div className=' flex flex-col gap-4'>
           <h2 className='text-3xl font-semibold text-center'>Soft Skills</h2>
           <ul className='flex flex-wrap gap-2 lg:gap-6 justify-center'>
             {softSkills.map((soft, index) => (
@@ -85,7 +85,7 @@ const Skills = () => {
                 key={index}
                 className='flex items-center justify-center gap-2 rounded-md p-2 border border-white/10 bg-violet-700 basis-1/3'>
                 <soft.icon className='size-6' />
-                <p className='text-sm lg:text-base'>{soft.name}</p>
+                <span className='text-sm lg:text-base lg:leading-5 '>{soft.name}</span>
               </li>
             ))}
           </ul>
