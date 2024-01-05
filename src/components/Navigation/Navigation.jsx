@@ -14,14 +14,14 @@ const Navigation = () => {
 
     {
       name: 'Proyectos',
-      url: '#'
+      url: '#proyectos'
     },
     {
       name: 'Formación',
       url: '#'
     },
     {
-      name: 'Hobbies',
+      name: 'Cursos',
       url: '#'
     },
     {
