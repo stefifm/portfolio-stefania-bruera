@@ -18,15 +18,15 @@ const Navigation = () => {
     },
     {
       name: 'Formación',
-      url: '#'
+      url: '#formacion'
     },
     {
       name: 'Cursos',
-      url: '#'
+      url: '#cursos'
     },
     {
       name: 'Contacto',
-      url: '#'
+      url: '#contacto'
     }
   ]
 
@@ -34,8 +34,8 @@ const Navigation = () => {
     <Navbar
       fluid
       rounded
-      className='bg-[#14071c] py-4 mx-auto max-w-screen-xl fixed top-0 left-0 right-0'>
-      <Navbar.Brand>
+      className='bg-[#14071c] py-4 mx-auto max-w-screen-xl fixed top-0 left-0 right-0 z-20'>
+      <Navbar.Brand href='#'>
         <img
           src={ProfilePic}
           className='mr-3 h-6 sm:h-9'
