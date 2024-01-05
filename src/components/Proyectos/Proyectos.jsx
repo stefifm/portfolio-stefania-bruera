@@ -61,7 +61,7 @@ const Proyectos = () => {
                 className='text-white border border-white/10 rounded-md px-4 py-3 flex items-center justify-center bg-purple-500 hover:bg-white hover:text-purple-500 transition-colors'
                 target='_blank'
                 rel='noreferrer'>
-                Ver Demo
+                Demo
               </a>
               <a
                 href={project.repo}
