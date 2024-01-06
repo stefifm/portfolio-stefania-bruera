@@ -1,5 +1,6 @@
 import './App.css'
 import BannerComponent from './components/BannerComponent/BannerComponent'
+import Contacto from './components/Contacto/Contacto'
 import Cursos from './components/Cursos/Cursos'
 import Formacion from './components/Formacion/Formacion'
 import Navigation from './components/Navigation/Navigation'
@@ -27,6 +28,7 @@ function App() {
       </main>
       {/* Footer */}
       {/* Dentro del Footer: Contacto */}
+      <Contacto />
     </>
   )
 }
