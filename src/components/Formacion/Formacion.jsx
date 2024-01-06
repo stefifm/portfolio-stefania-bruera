@@ -33,11 +33,8 @@ const Formacion = () => {
                 {academica.date}
               </Timeline.Time>
               <Timeline.Title className='text-orange-500'>{academica.title}</Timeline.Title>
-              <Timeline.Body className='text-orange-300/95 font-semibold'>
-                <div className='flex gap-1 items-center'>
-                  <HiCalendar />
-                  {academica.place}
-                </div>
+              <Timeline.Body>
+                <span className='text-orange-300/95 font-semibold'>{academica.place}</span>
               </Timeline.Body>
             </Timeline.Content>
           </Timeline.Item>
