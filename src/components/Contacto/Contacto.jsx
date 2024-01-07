@@ -1,7 +1,10 @@
 import { Button, FloatingLabel, Footer, Textarea } from 'flowbite-react'
+import { toast } from 'react-toastify'
 import { useForm } from 'react-hook-form'
+import { useForm as useFormspree } from '@formspree/react'
 import * as yup from 'yup'
 import { yupResolver } from '@hookform/resolvers/yup'
+import { useEffect } from 'react'
 
 const Contacto = () => {
   const schema = yup.object().shape({
@@ -26,23 +29,35 @@ const Contacto = () => {
       .max(300, 'No debe superar los 300 caracteres')
   })
 
+  const [serverState, sendToFormspree] = useFormspree('xayryzwj')
+
   const {
     register,
     handleSubmit,
-    formState: { errors }
+    formState: { errors, isDirty, isValid, isSubmitSuccessful },
+    reset
   } = useForm({
-    resolver: yupResolver(schema)
+    resolver: yupResolver(schema),
+    mode: 'onChange'
   })
 
-  const onSubmit = (data) => {
-    console.log(data)
+  if (serverState.succeeded) {
+    toast.success('Mensaje enviado correctamente. Me pondré en contacto rápidamente con usted.', {
+      toastId: 'success1'
+    })
   }
+
+  useEffect(() => {
+    if (isSubmitSuccessful) {
+      reset()
+    }
+  }, [isSubmitSuccessful, reset])
 
   return (
     <Footer
       id='contacto'
       container
-      className='bg-[#2d113e]'>
+      className='bg-[#250f32]'>
       <div className='w-full flex flex-col items-center justify-center'>
         <div className='grid lg:grid-cols-2 lg:gap-10 lg:items-center xl:w-2/3'>
           <div className='flex flex-col text-white px-4 py-5 justify-center'>
@@ -54,7 +69,7 @@ const Contacto = () => {
           </div>
           <form
             className='flex flex-col gap-4'
-            onSubmit={handleSubmit(onSubmit)}>
+            onSubmit={handleSubmit(sendToFormspree)}>
             <FloatingLabel
               variant='filled'
               label='Nombre'
@@ -91,11 +106,7 @@ const Contacto = () => {
             <Textarea
               variant='filled'
               placeholder='Mensaje'
-              className={
-                errors.mensaje?.message
-                  ? 'placeholder:text-red-600 ring-1 ring-red-600'
-                  : 'placeholder:ring-green-600 ring-1 ring-green-600'
-              }
+              className={errors.mensaje?.message && 'placeholder:text-red-600 ring-1 ring-red-600'}
               {...register('mensaje')}
               helperText={
                 <>
@@ -104,7 +115,11 @@ const Contacto = () => {
               }
             />
 
-            <Button type='submit'>Enviar Mensaje</Button>
+            <Button
+              type='submit'
+              disabled={!isDirty || !isValid || serverState.submitting}>
+              Enviar Mensaje
+            </Button>
           </form>
         </div>
 
