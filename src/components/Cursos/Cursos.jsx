@@ -55,7 +55,7 @@ const Cursos = () => {
       id='cursos'
       className='flex flex-col items-center gap-10 py-24 px-2 md:px-10 mx-auto lg:w-10/12 xl:w-2/3 xl:px-22 mt-14 mb-44'>
       <h1 className='text-5xl font-bold text-white'>Cursos</h1>
-      <div className='w-full h-[15rem] md:h-[30rem] lg:h-[35rem] xl:h-[40rem] 2xl:h-[50rem]'>
+      <div className='w-full h-64 md:h-[30rem] lg:h-[32rem] xl:h-[37rem] 2xl:h-[50rem]'>
         <Carousel
           slideInterval={5000}
           leftControl='<'

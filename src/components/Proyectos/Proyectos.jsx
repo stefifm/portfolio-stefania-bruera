@@ -41,7 +41,7 @@ const Proyectos = () => {
       id='proyectos'
       className='flex flex-col items-center gap-10 py-24 px-10 mx-auto lg:w-2/3 lg:px-22 mt-14 mb-44'>
       <h1 className='text-5xl font-bold text-white'>Proyectos</h1>
-      <div className='flex flex-wrap gap-5 justify-center items-center'>
+      <div className='grid xl:grid-cols-2 gap-5 justify-center items-center'>
         {projects.map((project, index) => (
           <Card
             className='max-w-sm bg-indigo-800 border-none shadow-md shadow-emerald-700'
