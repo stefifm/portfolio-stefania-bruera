@@ -24,6 +24,7 @@ import {
 import { GiStrong, GiTeamIdea } from 'react-icons/gi'
 import { PiStudent } from 'react-icons/pi'
 import { FaPersonDigging, FaPersonThroughWindow, FaUnlockKeyhole } from 'react-icons/fa6'
+import { motion } from 'framer-motion'
 
 const Skills = () => {
   const tecnologias = [
@@ -68,12 +69,16 @@ const Skills = () => {
           <h2 className='text-3xl font-semibold text-center '>Tecnologías</h2>
           <ul className='grid md:grid-cols-2 gap-2 lg:gap-6 justify-center'>
             {tecnologias.map((tecno, index) => (
-              <li
+              <motion.li
+                initial={{ x: -100, opacity: 0 }}
+                whileInView={{ x: 0, opacity: 1 }}
+                viewport={{ threshold: 0.2 }}
+                transition={{ delay: index * 0.1, duration: 0.5 }}
                 key={index}
                 className='flex items-center  gap-2 rounded-md p-2 border border-white/10 bg-violet-700 '>
                 <tecno.icon className='size-6' />
                 <p className='text-sm lg:text-base'>{tecno.name}</p>
-              </li>
+              </motion.li>
             ))}
           </ul>
         </div>
@@ -81,12 +86,16 @@ const Skills = () => {
           <h2 className='text-3xl font-semibold text-center'>Soft Skills</h2>
           <ul className='grid md:grid-cols-2 gap-2 lg:gap-6 justify-center'>
             {softSkills.map((soft, index) => (
-              <li
+              <motion.li
                 key={index}
+                initial={{ x: -100, opacity: 0 }}
+                whileInView={{ x: 0, opacity: 1 }}
+                viewport={{ threshold: 0.2 }}
+                transition={{ delay: index * 0.1, duration: 0.5 }}
                 className='flex items-center gap-2 rounded-md p-2 border border-white/10 bg-violet-700'>
                 <soft.icon className='size-6' />
                 <span className='text-sm lg:text-base lg:leading-5 '>{soft.name}</span>
-              </li>
+              </motion.li>
             ))}
           </ul>
         </div>

@@ -1,4 +1,5 @@
 import { Card } from 'flowbite-react'
+import { motion } from 'framer-motion'
 import Encriptador from '../../assets/encriptador-react.png'
 import RestF1 from '../../assets/REST-API-F1.png'
 import Motorflix from '../../assets/motorflix.png'
@@ -44,8 +45,8 @@ const Proyectos = () => {
       <div className='grid xl:grid-cols-2 gap-5 justify-center items-center'>
         {projects.map((project, index) => (
           <Card
-            className='max-w-sm bg-indigo-800 border-none shadow-md shadow-emerald-700'
             key={index}
+            className='max-w-sm bg-indigo-800 border-none shadow-rose-300 shadow-md duration-500 hover:shadow-xl transition-shadow'
             renderImage={() => (
               <img
                 src={project.img}
@@ -53,23 +54,27 @@ const Proyectos = () => {
                 className='size-full object-cover rounded-t-lg'
               />
             )}>
-            <h5 className='text-2xl font-bold tracking-tight text-white '>{project.title}</h5>
+            <h5 className='text-2xl font-bold tracking-tight text-orange-400/95 '>
+              {project.title}
+            </h5>
             <p className='font-normal text-white '>{project.description}</p>
             <div className='flex gap-3'>
-              <a
+              <motion.a
                 href={project.url}
-                className='text-white border border-white/10 rounded-md px-4 py-3 flex items-center justify-center bg-purple-500 hover:bg-white hover:text-purple-500 transition-colors'
+                whileHover={{ scale: 0.95, boxShadow: '0 0 10px #fff' }}
+                className='text-white border border-white/10 rounded-md px-4 py-3 flex items-center justify-center bg-purple-600'
                 target='_blank'
                 rel='noreferrer'>
                 Demo
-              </a>
-              <a
+              </motion.a>
+              <motion.a
                 href={project.repo}
-                className='text-purple-500 border border-white/10 rounded-md px-4 py-3 flex items-center justify-center bg-white hover:bg-purple-600 hover:text-white transition-colors'
+                whileHover={{ scale: 0.95, boxShadow: '0 0 10px #fda4af' }}
+                className='text-purple-500 border border-purple-600 rounded-md px-4 py-3 flex items-center justify-center bg-white '
                 target='_blank'
                 rel='noreferrer'>
                 Repositorio
-              </a>
+              </motion.a>
             </div>
           </Card>
         ))}

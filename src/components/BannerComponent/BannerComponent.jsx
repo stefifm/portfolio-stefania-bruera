@@ -1,6 +1,7 @@
 import { MdOutlineMailLock } from 'react-icons/md'
 import { AiOutlineInstagram } from 'react-icons/ai'
 import { FaTwitter, FaLinkedin, FaGithub } from 'react-icons/fa'
+import { motion } from 'framer-motion'
 import ProfilePic from '../../assets/profile-pic.png'
 
 const BannerComponent = () => {
@@ -46,24 +47,29 @@ const BannerComponent = () => {
             Argentina.
           </p>
 
-          <nav className='flex flex-wrap gap-2 mt-2 '>
+          <nav className='flex flex-wrap gap-2 lg:gap-3 mt-2 '>
             {socialMedia.map((item, index) => (
-              <a
+              <motion.a
                 key={index}
                 href={item.url}
+                whileHover={{
+                  scale: 0.97,
+                  transition: { duration: 0.4 },
+                  boxShadow: '0 0 10px #fda4af'
+                }}
                 target='_blank'
-                className='text-white border border-white/10 rounded-full px-4 py-3 flex gap-2 items-center justify-center bg-purple-500 hover:bg-purple-600 transition-colors'
+                className='text-white border border-white/10 rounded-full px-4 py-3 flex gap-2 items-center justify-center bg-purple-500'
                 rel='noreferrer'>
                 {item.icon}
                 <span className='text-white'>{item.name}</span>
-              </a>
+              </motion.a>
             ))}
           </nav>
         </div>
 
         <img
           src={ProfilePic}
-          alt=''
+          alt='Foto Perfil de Stefania Bruera'
           className='size-72 lg:size-80'
         />
       </div>
