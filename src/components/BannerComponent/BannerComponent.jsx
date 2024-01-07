@@ -1,8 +1,8 @@
-import { MdOutlineMailLock } from 'react-icons/md'
 import { AiOutlineInstagram } from 'react-icons/ai'
-import { FaTwitter, FaLinkedin, FaGithub } from 'react-icons/fa'
+import { FaTwitter, FaLinkedin, FaGithub, FaPaperclip } from 'react-icons/fa'
 import { motion } from 'framer-motion'
 import ProfilePic from '../../assets/profile-pic.png'
+import Cv from '../../assets/STEFANIA_BRUERA_CV.pdf'
 
 const BannerComponent = () => {
   const socialMedia = [
@@ -23,13 +23,13 @@ const BannerComponent = () => {
     },
     {
       name: 'Instagram',
-      url: 'https://www.instagram.com/stefifm',
+      url: 'https://www.instagram.com/bruerastefania',
       icon: <AiOutlineInstagram className='w-5 h-5' />
     },
     {
-      name: 'Email',
-      url: 'mailto:@bruerastefania@gmail.com',
-      icon: <MdOutlineMailLock className='w-5 h-5' />
+      name: 'Curriculum',
+      url: Cv,
+      icon: <FaPaperclip className='w-5 h-5' />
     }
   ]
 

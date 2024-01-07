@@ -4,7 +4,7 @@ import { Navbar } from 'flowbite-react'
 const Navigation = () => {
   const menu = [
     {
-      name: 'Sobre Mí',
+      name: 'Sobre Mi',
       url: '#sobre-mi'
     },
     {

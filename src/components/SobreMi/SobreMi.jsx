@@ -4,7 +4,7 @@ const SobreMi = () => {
       id='sobre-mi'
       className='text-white flex flex-col gap-4 py-48 px-2 mx-auto lg:w-2/3 2xl:px-28 mt-32 mb-32'>
       <div className='bg-purple-100/10 rounded-xl py-10 px-6 flex flex-col gap-5'>
-        <h1 className='text-4xl font-bold'>Sobre Mí</h1>
+        <h1 className='text-4xl font-bold'>Sobre Mi</h1>
         <article className='flex flex-col gap-1 text-wrap'>
           <p>
             Desde niña me había interesado la metorología pero me fui inclinando hacia el

@@ -24,6 +24,8 @@ import {
 import { GiStrong, GiTeamIdea } from 'react-icons/gi'
 import { PiStudent } from 'react-icons/pi'
 import { FaPersonDigging, FaPersonThroughWindow, FaUnlockKeyhole } from 'react-icons/fa6'
+import { LuBraces } from 'react-icons/lu'
+import { AiOutlineFunction } from 'react-icons/ai'
 import { motion } from 'framer-motion'
 
 const Skills = () => {
@@ -43,7 +45,9 @@ const Skills = () => {
     { name: 'Bootstrap', icon: FaBootstrap },
     { name: 'Material UI', icon: SiMui },
     { name: 'Styled Components', icon: SiStyledcomponents },
-    { name: 'Jest', icon: SiJest }
+    { name: 'Jest', icon: SiJest },
+    { name: 'POO', icon: LuBraces },
+    { name: 'Prog. Funcional', icon: AiOutlineFunction }
   ]
 
   const softSkills = [
