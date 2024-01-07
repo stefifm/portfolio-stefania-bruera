@@ -34,7 +34,7 @@ const Navigation = () => {
     <Navbar
       fluid
       rounded
-      className='bg-[#14071c] py-4 mx-auto max-w-screen-xl fixed top-0 left-0 right-0 z-20'>
+      className='bg-[#250f32] py-4 mx-auto max-w-screen-xl fixed top-0 left-0 right-0 z-20'>
       <Navbar.Brand href='#'>
         <img
           src={ProfilePic}
