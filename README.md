@@ -6,10 +6,13 @@ Nueva versión del Portfolio de Stefania Bruera, desarrollado con React.
 
 - React
 - Tailwind CSS
-- Flowbite
+- Flowbite React
 - Framer Motion
 - React Icons
+- Formspree
+- React Hook Form
+- Yup
+- React Toastify
 
 
-# **_WORK IN PROGRESS_**
 
