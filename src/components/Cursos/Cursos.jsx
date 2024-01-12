@@ -10,6 +10,7 @@ import DataVisual from '../../assets/Data-Visualization-Explorando-Seaborn.png'
 import Machine1 from '../../assets/Machine-Learning-clasificacion-SKLearn.png'
 import Machine2 from '../../assets/Machine-Learning-Optimizacion-modelos-hiperparametros.png'
 import IntroAnalisis from '../../assets/intro-analisis-datos.png'
+import English from '../../assets/certificado-ingles.png'
 import { Carousel } from 'flowbite-react'
 const Cursos = () => {
   const certificados = [
@@ -48,6 +49,9 @@ const Cursos = () => {
     },
     {
       img: IntroAnalisis
+    },
+    {
+      img: English
     }
   ]
   return (
