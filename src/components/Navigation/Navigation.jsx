@@ -8,14 +8,14 @@ const Navigation = () => {
       url: '#sobre-mi'
     },
     {
+      name: 'Proyectos',
+      url: '#proyectos'
+    },
+    {
       name: 'Skills',
       url: '#skills'
     },
 
-    {
-      name: 'Proyectos',
-      url: '#proyectos'
-    },
     {
       name: 'Formación',
       url: '#formacion'

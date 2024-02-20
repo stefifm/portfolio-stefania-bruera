@@ -17,10 +17,10 @@ function App() {
         <BannerComponent />
         {/* Section 2: Sobre Mí */}
         <SobreMi />
-        {/* Section 3: Skills */}
-        <Skills />
-        {/* Section 4: Proyectos */}
+        {/* Section 3: Proyectos */}
         <Proyectos />
+        {/* Section 4: Skills */}
+        <Skills />
         {/* Section 5: Formación */}
         <Formacion />
         {/* Section 6: Cursos */}

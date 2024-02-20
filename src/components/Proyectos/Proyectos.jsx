@@ -4,9 +4,18 @@ import Encriptador from '../../assets/encriptador-react.png'
 import RestF1 from '../../assets/REST-API-F1.png'
 import Motorflix from '../../assets/motorflix.png'
 import Farma from '../../assets/FARMASALUD3 E-COMMERCE.png'
+import MotorNext from '../../assets/motor-nextjs.png'
 
 const Proyectos = () => {
   const projects = [
+    {
+      title: 'MOTORFLIX NextJS',
+      description:
+        'Versión completamente renovada de MotorFlix con NextJS, TailwindCSS, Supabase y NextAuth',
+      img: MotorNext,
+      url: 'https://motorflix-nextjs.vercel.app/',
+      repo: 'https://github.com/stefifm/motorflix-nextjs'
+    },
     {
       title: 'Encriptador Web React',
       description: 'La versión React del primer proyecto de alura "encriptador web"',
