@@ -9,7 +9,7 @@ export const projects = [
   {
     title: 'SQL Quiz',
     description:
-      'Bienvenido a SQL Quiz, un pequeño juego de preguntas y respuestas que te permitirá poner a prueba tus conocimientos en SQL. Inspirado en el juego Javascript Quiz y en la clase de React de @midudev',
+      'Bienvenido a SQL Quiz, un pequeño juego de preguntas y respuestas sobre SQL',
     img: SqlQuiz,
     url: 'https://sql-quiz.surge.sh/',
     repo: 'https://github.com/stefifm/sql-quiz'
